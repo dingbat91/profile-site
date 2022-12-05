@@ -1,0 +1,10 @@
+body {
+	background-color: #931111;
+	color: white;
+}
+
+.spaceBar {
+	height: 45px;
+	width: auto;
+	background-color: #d9d9d9;
+}
