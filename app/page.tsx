@@ -3,7 +3,7 @@ import classname from "classnames";
 import styles from "./frontpage.module.css";
 import NavMenu from "./Components/Menu/page";
 import { motion, LayoutGroup } from "framer-motion";
-import Post from "./Components/post/post";
+import Post from "./Components/post/Post";
 
 //Font code
 const oxt = Oxanium({
@@ -21,6 +21,7 @@ const Frontpage = () => {
 				and hopeful candidate for your future employement.
 			</p>
 			<p>This website was developed with the following items:</p>
+			{/* @ts-expect-error Server Component */}
 			<Post />
 		</div>
 	);
