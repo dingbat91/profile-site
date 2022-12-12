@@ -1,4 +1,5 @@
 import "./global.css";
+import NavMenu from "./Components/Menu/page";
 
 export default function RootLayout({
 	children,
@@ -8,7 +9,11 @@ export default function RootLayout({
 	return (
 		<html>
 			<head />
-			<body>{children}</body>
+			<body>
+				<div className="spaceBar" />
+				<NavMenu />
+				{children}
+			</body>
 		</html>
 	);
 }
