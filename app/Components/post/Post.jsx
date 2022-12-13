@@ -4,10 +4,12 @@ export default async function post() {
 	const { data: posts } = await supabase.from("Posts").select();
 	return (
 		<div>
-			<h1>Test posts</h1>
-			{posts.map((post, x) => {
-				<h1>{post.Title}</h1>;
-			})}
+			{posts.map((post) => (
+				<div key={post.id}>
+					<h1>{post.Title}</h1>
+					<p>{post.content}</p>
+				</div>
+			))}
 		</div>
 	);
 }
