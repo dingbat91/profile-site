@@ -20,7 +20,11 @@ const Frontpage = () => {
 				This is the portfolio website of Matthew Hanson, a junior web developer
 				and hopeful candidate for your future employement.
 			</p>
-			<p>This website was developed with the following items:</p>
+			<p>
+				This website was developed with the following items: Next.JS using beta
+				app directory Supabase for blog backend database support Slate.js Rich
+				text editing
+			</p>
 			{/* @ts-expect-error Server Component */}
 			<PostStub />
 		</div>

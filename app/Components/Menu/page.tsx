@@ -5,6 +5,8 @@ import { motion, Variants } from "framer-motion";
 import { useState } from "react";
 import react from "react";
 import { LayoutGroup } from "framer-motion";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 //animation variants for buttons
 const itemvariant: Variants = {
@@ -38,6 +40,7 @@ const collapsevariants: Variants = {
 
 const NavMenu = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const router = useRouter();
 	return (
 		<>
 			<LayoutGroup id="Menu">
@@ -53,7 +56,12 @@ const NavMenu = () => {
 						Page
 					</motion.button>
 					<motion.div variants={collapsevariants}>
-						<motion.button variants={itemvariant}>Home</motion.button>
+						<motion.button
+							variants={itemvariant}
+							onClick={() => router.push("/")}
+						>
+							Home
+						</motion.button>
 						<motion.button variants={itemvariant}>About</motion.button>
 						<motion.button variants={itemvariant}>Skills</motion.button>
 						<motion.button variants={itemvariant}>Contact</motion.button>

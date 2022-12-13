@@ -21,6 +21,11 @@
 	align-items: center;
 	gap: 10px;
 	padding: 10px;
+	text-decoration: none;
+}
+
+.navMenu a {
+	text-decoration: none;
 }
 
 .navMenu a:last-child {

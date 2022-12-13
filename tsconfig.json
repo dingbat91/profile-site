@@ -26,7 +26,7 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"environment.d.ts",
-		"app/(static)/post/[id]/page.jsx",
+		"app/dynamic/post/[id]/page.jsx",
 		"app/Components/PostStub/PostStub.jsx"
 	],
 	"exclude": ["node_modules"]
