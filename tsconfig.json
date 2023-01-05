@@ -27,7 +27,8 @@
 		".next/types/**/*.ts",
 		"environment.d.ts",
 		"app/dynamic/post/[id]/page.jsx",
-		"app/Components/PostStub/PostStub.jsx"
+		"app/Components/PostStub/PostStub.jsx",
+		"app/Components/Textbox/Textbox.d.ts"
 	],
 	"exclude": ["node_modules"]
 }
